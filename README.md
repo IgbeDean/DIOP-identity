@@ -1,6 +1,6 @@
-# Nexus Identity Engine
+# DIOP Identity Engine
 
-Nexus Identity is a robust, enterprise-ready backend authentication and identity management system built with **Django 6** and backed by a relational **PostgreSQL** database. It seamlessly bridges secure manual credentials management with seamless third-party social authentication.
+DIOP Identity is a robust, enterprise-ready backend authentication and identity management system built with **Django 6** and backed by a relational **PostgreSQL** database. It seamlessly bridges secure manual credentials management with seamless third-party social authentication.
 
 ## 🚀 Key Features
 
