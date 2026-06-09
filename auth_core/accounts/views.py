@@ -122,7 +122,7 @@ class HomeView(TemplateView):
 # ----------------- Building all Profile Related View Logic-------------#
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-class NexusLoginRequiredMixin(LoginRequiredMixin):
+class DIOPLoginRequiredMixin(LoginRequiredMixin):
     """Custom Mixin to add a warning message when a guest tries to access protected pages."""
     
     def handle_no_permission(self):
@@ -133,7 +133,7 @@ class NexusLoginRequiredMixin(LoginRequiredMixin):
         return super().handle_no_permission()
 
 # ----------------- Building the Profile View-------------#
-class ProfileView(NexusLoginRequiredMixin, TemplateView):
+class ProfileView(DIOPLoginRequiredMixin, TemplateView):
     template_name = 'accounts/profile.html'
 
 
@@ -142,7 +142,7 @@ from django.views.generic import UpdateView
 from .models import Profile
 from .forms import ProfileUpdateForm
 
-class ProfileUpdateView(NexusLoginRequiredMixin, UpdateView):
+class ProfileUpdateView(DIOPLoginRequiredMixin, UpdateView):
     model = Profile
     form_class = ProfileUpdateForm
     template_name = 'accounts/edit_profile.html'
@@ -160,7 +160,7 @@ class ProfileUpdateView(NexusLoginRequiredMixin, UpdateView):
 # ----------------- Building the User Password Change View-------------#
 from django.contrib.auth.views import PasswordChangeView
 
-class UserPasswordChangeView(NexusLoginRequiredMixin, PasswordChangeView):
+class UserPasswordChangeView(DIOPLoginRequiredMixin, PasswordChangeView):
     template_name = 'accounts/password_change.html'
     success_url = reverse_lazy('profile')
 
@@ -171,7 +171,7 @@ class UserPasswordChangeView(NexusLoginRequiredMixin, PasswordChangeView):
 
 
 # ----------------Building the Account Status View -------------#
-class AccountStatusView(NexusLoginRequiredMixin, TemplateView):
+class AccountStatusView(DIOPLoginRequiredMixin, TemplateView):
     template_name = 'accounts/account_status.html'
 
     def get_context_data(self, **kwargs):

@@ -1,7 +1,7 @@
 /* --- 1. THEME & CORE --- */
 :root {
-    --nexus-red: #ff4757;
-    --nexus-dark: #0f172a;
+    --DIOP-red: #ff4757;
+    --DIOP-dark: #0f172a;
     --text-main: #1e293b;
     --text-muted: #64748b;
     --bg-soft: #f8fafc;
@@ -44,12 +44,12 @@ body {
 .logo {
     font-weight: 800;
     font-size: 1.5rem;
-    color: var(--nexus-dark);
+    color: var(--DIOP-dark);
     text-decoration: none;
     letter-spacing: -1px;
 }
 
-.logo span { color: var(--nexus-red); }
+.logo span { color: var(--DIOP-red); }
 
 .nav-links {
     display: flex;
@@ -65,10 +65,10 @@ body {
     transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(--nexus-red); }
+.nav-links a:hover { color: var(--DIOP-red); }
 
 .nav-btn-cta {
-    background: var(--nexus-dark);
+    background: var(--DIOP-dark);
     color: white !important;
     padding: 7px 20px;
     border-radius: 8px;
@@ -109,7 +109,7 @@ body {
     font-weight: 800;
     letter-spacing: -2px;
     line-height: 1.1;
-    color: var(--nexus-dark);
+    color: var(--DIOP-dark);
     margin-bottom: 24px;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .btn-primary {
-    background: var(--nexus-red);
+    background: var(--DIOP-red);
     color: white;
     padding: 16px 36px;
     border-radius: 12px;
@@ -145,7 +145,7 @@ body {
 
 .btn-secondary {
     background: var(--bg-soft);
-    color: var(--nexus-dark);
+    color: var(--DIOP-dark);
     padding: 16px 36px;
     border-radius: 12px;
     text-decoration: none;
@@ -172,14 +172,14 @@ body {
 }
 
 .feature-card:hover {
-    border-color: var(--nexus-red);
+    border-color: var(--DIOP-red);
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.05);
 }
 
 .feature-card i {
     font-size: 2.5rem;
-    color: var(--nexus-red);
+    color: var(--DIOP-red);
     margin-bottom: 24px;
 }
 
@@ -230,7 +230,7 @@ body {
 
 /* Subtle hover effect */
 .nav-btn-logout:hover {
-    color: var(--nexus-red);
+    color: var(--DIOP-red);
     transform: translateY(-1px);
 }
 

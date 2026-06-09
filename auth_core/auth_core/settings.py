@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'auth_core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME', 'nexus_db'),
+        'NAME': os.environ.get('DB_NAME', 'DIOP_db'),
         'USER': os.environ.get('DB_USER', 'postgres'),
         'PASSWORD': os.environ.get('DB_PASSWORD', 'your_postgres_password'),
         'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
@@ -180,7 +180,7 @@ EMAIL_HOST_USER = 'igbedean@gmail.com'
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 
 # 4. Branded Sender
-DEFAULT_FROM_EMAIL = 'Nexus Identity <igbedean@gmail.com>'
+DEFAULT_FROM_EMAIL = 'DIOP Identity <igbedean@gmail.com>'
 
 
 # ------ Enable authentication through third party (Google) -----#
@@ -236,7 +236,7 @@ ACCOUNT_SET_FLAG_SESSION_VARIABLES = True
 # Define the Defensive Firewall Rules
 from datetime import timedelta
 
-# --- NEXUS SECURITY SHIELD (AXES CONFIG) ---
+# --- DIOP SECURITY SHIELD (AXES CONFIG) ---
 # Lock out after 5 consecutive failed attempts
 AXES_FAILURE_LIMIT = 5
 

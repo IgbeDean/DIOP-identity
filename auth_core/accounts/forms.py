@@ -28,5 +28,5 @@ class ProfileUpdateForm(forms.ModelForm):
         # Adding some CSS classes so we can style the inputs in the next step
         widgets = {
             'bio': forms.Textarea(attrs={'rows': 4, 'placeholder': 'Tell us about yourself...'}),
-            'address': forms.TextInput(attrs={'placeholder': '123 Nexus Street'}),
+            'address': forms.TextInput(attrs={'placeholder': '123 DIOP Street'}),
         }

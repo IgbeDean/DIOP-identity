@@ -92,12 +92,12 @@
     transition: all 0.5s ease;
 }
 
-.nexus-toast {
+.DIOP-toast {
     position: fixed;
     top: 50px;
     right: 30px;
     background: #1a1a1a;
-    border-left: 4px solid var(--nexus-red);
+    border-left: 4px solid var(--DIOP-red);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
@@ -109,12 +109,12 @@
 
 .toast-content { display: flex; gap: 15px; align-items: center; }
 
-.toast-icon { color: var(--nexus-red); font-size: 1.5rem; }
+.toast-icon { color: var(--DIOP-red); font-size: 1.5rem; }
 
 .toast-body p { margin: 0 0 10px 0; font-size: 0.9rem; color: #fff; }
 
 .btn-mini {
-    background: var(--nexus-red);
+    background: var(--DIOP-red);
     color: white;
     border: none;
     padding: 5px 12px;

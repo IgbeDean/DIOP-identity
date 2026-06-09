@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nexus Identity | Dashboard</title>
+    <title>DIOP Identity | Dashboard</title>
     <link rel="stylesheet" href="{% static 'css/profile_style.css' %}">
     <!-- Font Awesome for the icons in your sidebar -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -17,7 +17,7 @@
         <aside class="sidebar">
             <div class="sidebar-content">
                 <div class="sidebar-header">
-                    <h2>Nexus</h2>
+                    <h2>DIOP</h2>
                 </div>
                 <nav class="sidebar-nav">
                     <ul>
@@ -82,7 +82,7 @@
     <script src="{% static 'js/notifications.js' %}"></script>
 
      <!-- A script for authomatic logout timing -->
-    <div id="inactivity-warning" class="nexus-toast" style="display: none;">
+    <div id="inactivity-warning" class="DIOP-toast" style="display: none;">
         <div class="toast-content">
             <div class="toast-icon"><i class="fas fa-exclamation-triangle"></i></div>
             <div class="toast-body">
@@ -96,7 +96,7 @@
 
     <script>
         // Create a global settings object
-        window.NexusSettings = {
+        window.DIOPSettings = {
             logoutUrl: "{% url 'logout_sequence' %}"
         };
     </script>

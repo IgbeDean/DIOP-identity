@@ -10,7 +10,7 @@
     --input-focus: #4e5ed4;
     --avatar-gold: #f0c05a;
     --success-green: #25d366;
-    --nexus-red: #ff4757;
+    --DIOP-red: #ff4757;
 }
 
 /* --- 2. GLOBAL RESET & BASE --- */
@@ -431,7 +431,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #e11d48; /* Nexus Red / Alert Red */
+    color: #e11d48; /* DIOP Red / Alert Red */
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 14px;
@@ -545,10 +545,10 @@ body {
     height: 100%;
     background-color: #25d366;
     border-radius: 50%;
-    animation: nexus-pulse 2s infinite;
+    animation: DIOP-pulse 2s infinite;
 }
 
-@keyframes nexus-pulse {
+@keyframes DIOP-pulse {
     0% {
         width: 8px;
         height: 8px;

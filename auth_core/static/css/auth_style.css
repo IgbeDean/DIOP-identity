@@ -1,8 +1,8 @@
-/* --- Nexus Identity Variables --- */
+/* --- DIOP Identity Variables --- */
 :root {
     --auth-bg: #000000;         /* Pure Black */
     --card-bg: #0a0a0a;         /* Near-Black Card */
-    --nexus-red: #ff4757;       /* Signature Red */
+    --DIOP-red: #ff4757;       /* Signature Red */
     --text-main: #ffffff;       /* Pure White */
     --text-muted: #a1a1aa;      /* Slate/Zinc for labels */
     --input-bg: #141414;        /* Dark Input Surface */
@@ -85,7 +85,7 @@ body {
 
 .brand-logo::after {
     content: '.';
-    color: var(--nexus-red);
+    color: var(--DIOP-red);
 }
 
 .back-link {
@@ -126,7 +126,7 @@ body {
 .dot.active {
     width: 24px;
     border-radius: 10px;
-    background-color: var(--nexus-red);
+    background-color: var(--DIOP-red);
 }
 
 /* --- Right Side: Form Content --- */
@@ -158,7 +158,7 @@ body {
 }
 
 .form-content-inner a {
-    color: var(--nexus-red);
+    color: var(--DIOP-red);
     text-decoration: none;
     font-weight: 600;
 }
@@ -192,7 +192,7 @@ input[type="password"] {
 
 input:focus {
     outline: none;
-    border-color: var(--nexus-red);
+    border-color: var(--DIOP-red);
     background: #1a1a1a;
     box-shadow: 0 0 0 4px rgba(255, 71, 87, 0.1);
 }
@@ -201,7 +201,7 @@ input:focus {
 .btn-primary {
     width: 100%;
     padding: 16px;
-    background: var(--nexus-red);
+    background: var(--DIOP-red);
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -237,7 +237,7 @@ input:focus {
     }
 }
 
-/* --- Nexus Form Error Styling --- */
+/* --- DIOP Form Error Styling --- */
 
 /* Targets the list container Django creates */
 .errorlist {
@@ -248,7 +248,7 @@ input:focus {
 
 /* Targets the individual error messages */
 .errorlist li {
-    color: var(--nexus-red);
+    color: var(--DIOP-red);
     font-size: 0.85rem;
     font-weight: 600;
     display: flex;
@@ -265,7 +265,7 @@ input:focus {
 
 /* Highlight the input border when there is an error */
 .form-group.has-error input {
-    border-color: var(--nexus-red);
+    border-color: var(--DIOP-red);
     background: rgba(255, 71, 87, 0.02);
 }
 
@@ -323,14 +323,14 @@ input:focus {
 }
 
 .forgot-password-link:hover {
-    color: var(--nexus-red);
+    color: var(--DIOP-red);
 }
 
 /* Target the list and the spans Django creates for help text */
 .auth-form ul, 
 .auth-form .helptext, 
 .auth-form span[id^="id_password"] {
-    color: var(--nexus-red) !important; /* A muted grey */
+    color: var(--DIOP-red) !important; /* A muted grey */
     font-size: 0.8rem !important;
     list-style-type: none !important;
     padding-left: 0 !important;
@@ -339,7 +339,7 @@ input:focus {
 
 /* Style the individual bullet points */
 .auth-form li {
-    color: var(--nexus-red) !important;
+    color: var(--DIOP-red) !important;
     margin-bottom: 5px !important;
 }
 

@@ -44,7 +44,7 @@
         </div>
         
         <div class="header-text">
-            <h1>{{ user.profile.last_name|default:"Nexus" }} {{ user.profile.first_name|default:"User" }}</h1>
+            <h1>{{ user.profile.last_name|default:"DIOP" }} {{ user.profile.first_name|default:"User" }}</h1>
             <p class="user-email"><i class="far fa-envelope"></i> {{ user.email }}</p>
 
             <div class="security-pulse-container">
@@ -64,7 +64,7 @@
         {% if user.profile.email_verified %}
             <div class="status-confirmed">
                 <i class="fas fa-certificate"></i> 
-                <span>Verified Nexus Citizen</span>
+                <span>Verified DIOP Citizen</span>
             </div>
         {% else %}
             <div class="status-pending">

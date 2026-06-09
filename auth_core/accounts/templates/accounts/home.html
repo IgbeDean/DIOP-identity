@@ -6,14 +6,14 @@
         {% if user.is_authenticated %}
             <span class="badge badge-success">System Active</span>
             <h1>Welcome back, {{ user.profile.first_name|default:"Citizen" }}</h1>
-            <p>Your Nexus Identity is secured and active. Access your control panel to manage your profile and security settings.</p>
+            <p>Your DIOP Identity is secured and active. Access your control panel to manage your profile and security settings.</p>
             <div class="hero-actions">
                 <a href="{% url 'profile' %}" class="btn-primary">Enter Dashboard</a>
             </div>
         {% else %}
-            <span class="badge badge-red">Nexus Identity v1.0</span>
+            <span class="badge badge-red">DIOP Identity v1.0</span>
             <h1>Secure Your Digital Identity</h1>
-            <p>The next generation of identity management. Build your profile, secure your credentials, and take control of your data with Nexus.</p>
+            <p>The next generation of identity management. Build your profile, secure your credentials, and take control of your data with DIOP.</p>
             <div class="hero-actions">
                 <a href="{% url 'register' %}" class="btn-primary">Get Started</a>
                 <a href="{% url 'login' %}" class="btn-secondary">Member Login</a>

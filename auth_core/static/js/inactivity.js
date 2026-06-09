@@ -1,6 +1,6 @@
 (function() {
     // If the settings don't exist (meaning user is logged out), stop immediately
-    if (!window.NexusSettings) return;
+    if (!window.DIOPSettings) return;
 
     // PROFESSIONAL SETTINGS
     const totalIdleTime = 1200000; // 20 Minutes total
@@ -28,7 +28,7 @@
             
             if (secondsRemaining <= 0) {
                 clearInterval(countdownTimer);
-                window.location.href = window.NexusSettings.logoutUrl;
+                window.location.href = window.DIOPSettings.logoutUrl;
             }
         }, 1000);
     };

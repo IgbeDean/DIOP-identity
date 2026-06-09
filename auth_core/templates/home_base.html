@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nexus Identity | Secure Your Future</title>
+    <title>DIOP Identity | Secure Your Future</title>
     <link rel="stylesheet" href="{% static 'css/home_style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -13,7 +13,7 @@
 <body>
     <nav class="top-nav">
         <div class="nav-container">
-            <a href="{% url 'home' %}" class="logo">NEXUS<span>.</span></a>
+            <a href="{% url 'home' %}" class="logo">DIOP<span>.</span></a>
             <div class="nav-links">
                 {% if user.is_authenticated %}
                     <a href="{% url 'profile' %}">Profile</a>
@@ -51,7 +51,7 @@
     </main>
 
     <footer class="home-footer">
-        <p>&copy; 2026 Nexus Identity Engine. All rights reserved.</p>
+        <p>&copy; 2026 DIOP Identity Engine. All rights reserved.</p>
     </footer>
 
 
@@ -60,7 +60,7 @@
     <script src="{% static 'js/notifications.js' %}"></script>
 
     <!-- A script for authomatic logout timing -->
-    <div id="inactivity-warning" class="nexus-toast" style="display: none;">
+    <div id="inactivity-warning" class="DIOP-toast" style="display: none;">
         <div class="toast-content">
             <div class="toast-icon"><i class="fas fa-exclamation-triangle"></i></div>
             <div class="toast-body">
@@ -75,7 +75,7 @@
     {% if user.is_authenticated %}
         <script>
             // Create a global settings object
-            window.NexusSettings = {
+            window.DIOPSettings = {
                 logoutUrl: "{% url 'logout_sequence' %}"
             };
         </script>
